@@ -1,0 +1,4 @@
+<div class="container">
+  <app-todo-form [tasks]="tasks" (instanceEventEmmiter)="emmitTask($event)"></app-todo-form>
+  <app-todo-list [tasks]="tasks" (instanceEventEmmiter)="emmitTask($event)"></app-todo-list>
+</div>

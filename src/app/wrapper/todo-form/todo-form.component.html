@@ -1,0 +1,10 @@
+<div class="form p-5 bg-primary">
+  <h1 class="text-light text-center">To-Do App!</h1>
+  <p class="text-light text-center">Add New To-Do</p>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Add your Task" [(ngModel)]="taskTitle">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary btn btn-light ms-4" type="button" (click)="addTask(taskTitle)">Add Task</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="list p-5 bg-light">
+  <h2 class="text-center text-secondary mb-5">let's get some work done!</h2>
+  <div class="tasks">
+    @for (task of tasks; track $index) {
+      <div class="task">
+        <h3 class="title" [ngClass]="{'completed-task': task.isCompleted}">{{task.title}}</h3>
+        <div class="btns">
+          <button class="complete btn btn-warning" (click)="completeTask(task.id)">{{ task.isCompleted ? 'Undo' : 'Completed' }}</button>
+          <button class="delete btn btn-danger" (click)="deleteTask(task.id)">Delete</button>
+        </div>
+      </div>
+    }
+  </div>
+</div>
